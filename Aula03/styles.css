@@ -1,0 +1,32 @@
+body {
+    background-color: burlywood;
+    font-size: 14px;
+}
+
+header {
+    border-bottom-style: solid;
+    border-bottom-style: solid;
+    border-bottom-style: solid;
+}    
+h1 {
+    color:chocolate;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px
+}
+
+
+main {
+    border-left-style: dotted;
+    border-left-width: 5px;
+    border-left-color: coral;
+    padding-left: 20px;
+
+
+}
+
+footer {
+    margin-top: 20px;
+    border-top: dashed 3px black;
+    text-align: right;
+
+}
