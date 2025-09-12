@@ -21,7 +21,7 @@
             padding: 20px;
         }
         header {
-            border-bottom:  solid 3px black
+            border-bottom:  solid 3px black;
             margin-bottom: 10px; 
         }
         footer {
@@ -31,11 +31,42 @@
         .icon {
             margin-right: 8px;
         }
+        .caixa {
+            border-style:solid;
+            border-width: 1px;
+            border-color:black;
+            margin: 5px;
+        }
+
+
     </style>
 </head>
 <body>
     <!-- Cabeçalho da página -->
-    <header>
+    <header class="bg-secondary text black">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="cold-md-2">
+                     <p>Logo</p>
+
+                </div>
+            </div>
+        </div>
+
+        
+                 <div class="cold-md-7">
+                     <p>Campo de Busca</p>
+
+                 </div>
+                 <div class="cold-md-3">
+                    <p>Ícones</p>
+                 </div>
+             </div>
+            
+        </div>
+
+        
+        
 
     </header>
     <!-- Fim: cabeçalho da página -->
@@ -48,25 +79,55 @@
     <!-- Roda pé da página -->
     </main>
 
-    <footer>
-        <!-- Menu do rodape -->
-       <nav>
-           <!-- Lista de itens do menu -->
-           <ul>
-                
-              <li>
-                <a herf="privacidade.html"> Politíca de Privacidade</a>
-            </li>
-              <li>
-                <a hrerf="suporte.html">  Suporte</a>
+    <footer class="bg-black text-white">
 
-                </li>
-              <li>Fale Conosco</li>
-              <li>Quem Somos</li>
-              <li>Redes Sociais</li>
-              <li>Termos e Condições</li>
-           </ul>
-        </nav>
+        <!-- container -->
+        <div class="container py-4">
+            <div class="row">
+                <!-- 1 -->
+                <div class="col-md-2 ">
+                    <p>Links Rápidos</p>
+                    <!-- Menu do rodape -->
+                    <nav class="nav">
+                        <!-- Lista de itens do menu -->
+                        
+                             <a class="nav-link text-white py-1" href="privacidade.html"> Politíca de Privacidade</a>
+                             <a class="nav-link text-white py-1" href="suporte.html">  Suporte</a>
+                             <a class="nav-link text-white py-1" href="fale Conosco.html"> Fale Conosco</a>
+                             <a class="nav-link text-white py-1" href="quem Somos.html"> Quem Somos</a>
+                             <a class="nav-link text-white py-1" href="termos e condições.html"> Termos e Condições</a>
+                           
+                    </nav>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-md-3 ">
+                    <p>Redes Sociais</p>
+
+                    <a href="http://facebook.com.br" target="_blank"><i class="bi bi-facebook"></i></a>
+                    class="nav-link text-white py-1"                               <i class="bi bi-facebook"></i></a>
+
+                    <a href="http://github.com" target="_blank"> <i class="bi bi-github"></i></a>
+
+                    <a href="http://instagram.com" target="_blank"> <i class="bi bi-instagram"></i></a>
+
+                    <a href="http://linkedin.com" target="_blank"> <i class="bi bi-linkedin"></i></a> 
+
+                    <a href="http://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                    
+                </div>
+
+                <!-- 3 -->
+                <div class="col-md-5 ">
+                    <h2> Terceira Coluna </h2>  
+                </div>
+            </div>        
+        </div>
+
+
+        
+
+
     </footer>
     <!-- Fim: Roda pe da página -->
 
