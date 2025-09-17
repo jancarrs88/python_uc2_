@@ -37,32 +37,67 @@
             border-color:black;
             margin: 5px;
         }
+        .tabela {
+            border-collapse: solid;
+            width: 80%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .tabela thead th {
+            background-color: white;
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .tabela tbody td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .tabela_zebrada tbody tr:nth-child(even) {
+            background-color:blue;
+        }
+        .tabela_zebrada tbody tr:nth-child(odd) {
+            background-color:aqua;
+        }
+        .tabela_zebrada tbody tr:hover {
+            background-color: white;
+            color:blueviolet;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        .elemento {
+            background-image: ;
+            background-size: cover;
+            background-position: left;
+        }
 
 
     </style>
 </head>
 <body>
+    
     <!-- Cabeçalho da página -->
     <header class="bg-secondary text black">
         <div class="container pt-3">
+            <h1> Calçados </h1>
+            <!-- 1a Linha -->
             <div class="row">
-                <div class="cold-md-2">
-                     <p>Logo</p>
-
+                <!-- 1a coluna -->
+                <div class="col-md-2">
+                    <p>Logo</p>
                 </div>
+                
+                <!-- 2a coluna -->
+                <div class="col-md-7">
+                    <p>Campo de busca</p>
+                </div>
+                
+                <!-- 3a coluna -->
+                <div class="col-md-3">
+                    <p>icones</p>
+                </div>   
             </div>
-        </div>
-
-        
-                 <div class="cold-md-7">
-                     <p>Campo de Busca</p>
-
-                 </div>
-                 <div class="cold-md-3">
-                    <p>Ícones</p>
-                 </div>
-             </div>
-            
         </div>
 
         
@@ -74,7 +109,54 @@
     <!-- Area principal -->
     <main>
     <!-- Fim da Area principal -->
-
+        <table class="tabela_zebrada">
+            <!-- Head da Tabela -->   
+            <thead>
+            <!-- Linha -->       
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+            </thead>
+            <!-- Corpo da tabela --> 
+            <tbody>
+            <!-- Linha -->     
+            <tr>        
+                <td>Tênis Nike</td>
+                <td>R$:299,90</td>
+            </tr>
+            <tr>
+                <td>Tênis Asics</td>
+                <td>R$:500,00</td>
+            </tr>
+            <tr>
+                <td>Tênis Mizuno</td>
+                <td>R$:799,90</td>
+            </tr>
+            <tr>
+                <td>Tênis Adidas</td>
+                <td>R$:899,90</td>
+            </tr>
+            <tr>
+                <td>Tênis Olympikus</td>
+                <td>R$:699,90</td>
+            </tr>
+            <tr>
+                <td>Tênis Fila</td>
+                <td>R$:499,90</td>
+            </tr>
+            <tr>
+                <td colspan="2">Promoção Relâmpago</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Tênis Asics</td>
+                <td>R$ 799,90</td>
+            </tr>
+            <tr>
+                <td>Desconto: 10%</td>
+            </tr>
+            </tbody>
+        </table>
 
     <!-- Roda pé da página -->
     </main>
@@ -104,22 +186,26 @@
                 <div class="col-md-3 ">
                     <p>Redes Sociais</p>
 
-                    <a href="http://facebook.com.br" target="_blank">
+                    <a href="http://facebook.com.br" target="_blank"
                         class="text-white py-1"><i class="bi bi-facebook"></i></a>
 
-                    <a href="http://github.com" target="_blank"> <i class="bi bi-github"></i></a>
+                    <a href="http://github.com" target="_blank"
+                        class="text-white p-1"><i class="bi bi-github"></i></a>
 
-                    <a href="http://instagram.com" target="_blank"> <i class="bi bi-instagram"></i></a>
+                    <a href="http://instagram.com" target="_blank"
+                        class="text-white p-1"><i class="bi bi-instagram"></i></a>
 
-                    <a href="http://linkedin.com" target="_blank"> <i class="bi bi-linkedin"></i></a> 
+                    <a href="http://linkedin.com" target="_blank"
+                        class="text-white p-1"><i class="bi bi-linkedin"></i></a>
 
-                    <a href="http://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="http://twitter.com" target="_blank"
+                        class="text-white p-1"><i class="bi bi-twitter"></i></a>
                     
                 </div>
 
                 <!-- 3 -->
                 <div class="col-md-5 ">
-                    <h2> Terceira Coluna </h2>  
+                      
                 </div>
             </div>        
         </div>
