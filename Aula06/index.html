@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            border-bottom:  solid 3px black;
+            margin-bottom: 10px; 
+        }
+        footer {
+            border-top: solid 3px black;
+            margin-top: 10px;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+        .caixa {
+            border-style:solid;
+            border-width: 1px;
+            border-color:black;
+            margin: 5px;
+        }
+        .tabela {
+            border-collapse: solid;
+            width: 80%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .tabela thead th {
+            background-color: white;
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .tabela tbody td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .tabela_zebrada tbody tr:nth-child(even) {
+            background-color:rgb(158, 53, 4);
+        }
+        .tabela_zebrada tbody tr:nth-child(odd) {
+            background-color:rgb(172, 141, 5);
+        }
+        .tabela_zebrada tbody tr:hover {
+            background-color: white;
+            color:rgb(21, 2, 39);
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        .elemento {
+            background-image: ;
+            background-size: cover;
+            background-position: left;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- Cabeçalho da página -->
+    <header class="bg-secondary text black">
+        <div class="container pt-3">
+            <form method="post">
+                Nome Completo:
+                <input type="text">
+                <br>
+                Email:
+                <input type="text">
+                <br>
+                Telefone:
+                <input type="text">
+                <br>
+                Data de nascimento:
+                <input type="text">
+                <br>
+                Senha:
+                <input type="text">
+                <br>
+                Confirmar:
+                <input type="text">
+                <br>
+                Data de Nascimento:
+                <input type="text">
+                <br>
+                
+            </form>
+            <h1> Calçados </h1>
+            <!-- 1a Linha -->
+            <div class="row">
+                <!-- 1a coluna -->
+                <div class="col-md-2">
+                    <p>Logo</p>
+                </div>
+                
+                <!-- 2a coluna -->
+                <div class="col-md-7">
+                    <p>Campo de busca</p>
+                </div>
+                
+                <!-- 3a coluna -->
+                <div class="col-md-3">
+                    <p>icones</p>
+                </div>   
+            </div>
+        </div>
+
+        
+        
+
+    </header>
+    <!-- Fim: cabeçalho da página -->
+
+    <!-- Area principal -->
+    <main>
+    <!-- Fim da Area principal -->
+        <table class="tabela_zebrada">
+            <!-- Head da Tabela -->   
+            <thead>
+            <!-- Linha -->       
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+            </thead>
+            <!-- Corpo da tabela --> 
+            <tbody>
+            <!-- Linha -->     
+            <tr>        
+                <td><img src="img/Nike.jpg"
+                    class="img-thumbnail" alt="Nike"></td>
+                <td>
+                    <h5>Nike</h5>
+                    <ul class="list-unstyled">
+                        <li><small>cor: Verde</small></li>
+                        <li><small>Material: Couro</small></li>
+                        <li><span class="badge bg-sucess">Disponivel</span></li>
+                        <li><span class="badge bg-warning">Poucas Unidades</span></li>
+                        <li><span class="badge bg-danger">Fora de Estoque</span></li>
+                    </ul>
+                </td>
+                <td>
+                    <span class="text-sucess fw-bold">R$ 299,00</span>
+                    <del class="text-muted d-block">R$ 599,00</del>
+                </td>
+            </tr>
+            <tr>
+                <td>Tênis Asics</td>
+                <td>R$:500,00</td>
+                <td><img src="img/Asics.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>Tênis Mizuno</td>
+                <td>R$:799,90</td>
+                <td><img src="img/Mizuno.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>Tênis Adidas</td>
+                <td>R$:899,90</td>
+                <td><img src="img/Adidas.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>Tênis Olympikus</td>
+                <td>R$:699,90</td>
+                <td><img src="img/Olympikus.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>Tênis Fila</td>
+                <td>R$:499,90</td>
+                <td><img src="img/Fila.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td colspan="2">Promoção Relâmpago</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Tênis Asics</td>
+                <td>R$ 500,90</td>
+            </tr>
+            <tr>
+                <td>Desconto: 10%</td>
+            </tr>
+            </tbody>
+        </table>
+
+    <!-- Roda pé da página -->
+    </main>
+
+    <footer class="bg-black text-white">
+
+        <!-- container -->
+        <div class="container py-4">
+            <div class="row">
+                <!-- 1 -->
+                <div class="col-md-2 ">
+                    <p>Links Rápidos</p>
+                    <!-- Menu do rodape -->
+                    <nav class="nav">
+                        <!-- Lista de itens do menu -->
+                        
+                             <a class="nav-link text-white py-1" href="privacidade.html"> Politíca de Privacidade</a>
+                             <a class="nav-link text-white py-1" href="suporte.html">  Suporte</a>
+                             <a class="nav-link text-white py-1" href="fale Conosco.html"> Fale Conosco</a>
+                             <a class="nav-link text-white py-1" href="quem Somos.html"> Quem Somos</a>
+                             <a class="nav-link text-white py-1" href="termos e condições.html"> Termos e Condições</a>
+                           
+                    </nav>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-md-3 ">
+                    <p>Redes Sociais</p>
+
+                    <a href="http://facebook.com.br" target="_blank"
+                        class="text-white py-1"><i class="bi bi-facebook"></i></a>
+
+                    <a href="http://github.com" target="_blank"
+                        class="text-white p-1"><i class="bi bi-github"></i></a>
+
+                    <a href="http://instagram.com" target="_blank"
+                        class="text-white p-1"><i class="bi bi-instagram"></i></a>
+
+                    <a href="http://linkedin.com" target="_blank"
+                        class="text-white p-1"><i class="bi bi-linkedin"></i></a>
+
+                    <a href="http://twitter.com" target="_blank"
+                        class="text-white p-1"><i class="bi bi-twitter"></i></a>
+                    
+                </div>
+
+                <!-- 3 -->
+                <div class="col-md-5 ">
+                      
+                </div>
+            </div>        
+        </div>
+
+
+        
+
+
+    </footer>
+    <!-- Fim: Roda pe da página -->
+
+
+    
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
